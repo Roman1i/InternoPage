@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    margin-left: calc(50vw - 1200px/2);
+    margin-right: calc(50vw - 1200px/2);
+    width: 1200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 44px;
+    margin-bottom: 57px;
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &__text {
+            font-family: DM Serif Display;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 50px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #292F36;
+        }
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 40px;font-family: Jost;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #292F36; 
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 356px;
+    background-image: url('../img/blogBG.png');
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        height: 178px;
+        width: 503px;
+        border-radius: 37px 37px 0px 0px;
+    }
+    &__header {
+        font-family: DM Serif Display;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 63px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #292F36;        
+    }
+    &__text {
+        font-family: Jost;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #4D5053;        
+    }
+}
+
+.latest {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    &__header {
+        font-family: DM Serif Display;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 63px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #292F36;
+        padding-bottom: 27px;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 65px;
+        border: 1px solid #E7E7E7;
+        border-radius: 62px;
+        padding: 22px;
+    }
+    &__description {
+        &__header {
+            font-family: DM Serif Display;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 31px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #292F36;
+            padding-bottom: 22px;
+        }
+        &__text {
+            width: 469px;
+            font-family: Jost;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0.01em;
+            text-align: left;
+            color: #4D5053;
+            padding-bottom: 41px;
+        }
+        &__date {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__text {
+                font-family: Jost;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                text-align: left;
+                color: #4D5053;
+            }
+            &__link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 52px;
+                height: 52px;
+                border-radius: 50px;
+                background-color: #F4F0EC;
+            }
+        }
+    }
+}
+
+.news {
+    padding-top: 150px;
+    padding-bottom: 96px;
+    &__header {
+        font-family: DM Serif Display;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 63px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #292F36;
+        padding-bottom: 30px;
+    }
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        &__item {
+            transition: 0.2s;
+            box-sizing: border-box;
+            width: 382px;
+            height: 521px;
+            border: 1px solid #E7E7E7;
+            border-radius: 62px;
+            display: flex;
+            flex-direction: column;
+            padding: 21px;
+            position: relative;
+            &__tag {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                font-family: Jost;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                text-align: left;
+                color: #4D5053;
+                background-color: #FFFFFF;
+                width: 124px;
+                height: 40px;  
+                border-radius: 8px 8px 8px 0px;
+                left: 41px;
+                top: 249px;
+            }
+            &__text {
+                text-align: left;
+                padding-top: 11px;
+                font-family: DM Serif Display;
+                font-size: 25px;
+                font-weight: 400;
+                line-height: 31px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #292F36;
+                height: 93px;
+                width: 305px;
+                padding-bottom: 20px;
+            }
+            &__date {
+                width: 340px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &__text {
+                    font-family: Jost;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.01em;
+                    text-align: left;
+                    color: #4D5053;
+                }
+                &__link {
+                    transition: 0.2s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 52px;
+                    height: 52px;
+                    background-color: #F4F0EC;
+                    border-radius: 50px;
+                }
+            }
+        }
+        &__item:hover {
+            background-color: #F4F0EC;
+        }
+        &__item:hover .news__block__item__date__link{
+            background-color: #FFFFFF;
+        }
+    }
+}
+
+.footer {
+    height: 406px;
+    display: flex;
+    &__content {
+        width: 393px;
+        padding-right: 101px;
+        &__logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: DM Serif Display;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 50px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #292F36;
+            padding-bottom: 18px;
+        }
+        &__text {
+            font-family: Jost;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0.01em;
+            text-align: left;
+            color: #4D5053;
+            padding-bottom: 31px;
+        }
+        &__links {
+            display: flex;
+            align-content: center;
+            gap: 10px;
+        }
+    }
+    &__pages{
+        width: 125px;
+        padding-right: 322px;
+        display: flex;
+        flex-direction: column;
+        font-family: Jost;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 66px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #4D5053;
+        
+    }
+    &__contact {
+        width: 258px;
+        font-family: Jost;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #4D5053;
+
+    }
+    &__header {
+        font-family: DM Serif Display;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 31px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #292F36;
+        padding-bottom: 26px;
+    }
+}
